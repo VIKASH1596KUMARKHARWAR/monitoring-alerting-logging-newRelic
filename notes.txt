@@ -1,0 +1,12 @@
+Everything was on the on aws ec2 instance machine
+
+//creating a fresh ec2 instance on aws -ubuntu
+//new Relic -ubuntu
+//install the nodejs(digital ocean ubuntu install node.js) 
+
+
+
+1.To monitor the host 
+2.monitoring the Node.js process 
+
+
