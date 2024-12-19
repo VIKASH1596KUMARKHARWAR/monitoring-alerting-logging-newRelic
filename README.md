@@ -3,6 +3,10 @@
 ## Overview
 This document outlines best practices and implementation steps for monitoring, logging, and alerting for hosts, Node.js processes, and EC2 instances using New Relic.
 
+
+![Overview Diagram](./image1-monitoring.png)
+
+
 ---
 
 ## Prerequisites
