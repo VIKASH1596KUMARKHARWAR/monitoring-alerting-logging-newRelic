@@ -18,12 +18,6 @@ This document outlines best practices and implementation steps for monitoring, l
 New Relic Infrastructure provides visibility into your host's performance metrics:
 
 - **Install the Infrastructure Agent:**
-  ```bash
-  echo "deb [arch=amd64] https://download.newrelic.com/infrastructure_agent/linux/apt focal main" | sudo tee /etc/apt/sources.list.d/newrelic-infra.list
-  curl -s https://download.newrelic.com/infrastructure_agent/gpg/newrelic-infra.gpg | sudo apt-key add -
-  sudo apt-get update
-  sudo apt-get install newrelic-infra -y
-  ```
   
 - **Key Metrics Collected:**
   - CPU utilization
@@ -40,15 +34,7 @@ New Relic APM (Application Performance Monitoring) helps track Node.js applicati
    ```
 2. **Configure the Agent:**
    Add the `newrelic.js` file to your application root directory and set the New Relic license key:
-   ```javascript
-   exports.config = {
-     app_name: ['My Node.js Application'],
-     license_key: 'YOUR_NEW_RELIC_LICENSE_KEY',
-     logging: {
-       level: 'info'
-     }
-   };
-   ```
+   
 3. **Start the Application with Monitoring:**
    ```bash
    node -r newrelic app.js
